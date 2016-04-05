@@ -10,6 +10,7 @@ import {Subject} from 'rxjs/Rx'
 export class LogService {
 
     loggers: Map<string, Logger> = null;
+    private _level : string;
 
     private _serviceNotification: Subject<any> = null;
 
@@ -20,7 +21,12 @@ export class LogService {
     }
 
     set level( level:string ){
+        this._level;
         this._serviceNotification.next( { type: 'LEVEL', payload: { level }} );
+    }
+    
+    get level(){
+        return this._level;
     }
 
     openLogger(loggerName: string): Logger {
