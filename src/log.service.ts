@@ -19,9 +19,10 @@ export class LogService {
         this.openLogger('main');
     }
 
-    set level( level:string ){
+    level( level:string ){
         this._serviceNotification.next( { type: 'LEVEL', payload: { level }} );
     }
+    
 
     openLogger(loggerName: string): Logger {
         var existingLogger = this.loggers.get(loggerName);

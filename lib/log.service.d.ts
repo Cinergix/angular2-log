@@ -4,7 +4,7 @@ export declare class LogService {
     loggers: Map<string, Logger>;
     private _serviceNotification;
     constructor();
-    level: string;
+    level(): string;
     openLogger(loggerName: string): Logger;
     closeLogger(loggerName: string): Logger;
     to(loggerName: string): Logger;
