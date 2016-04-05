@@ -33,7 +33,6 @@ export class Logger {
     onServiceNotification( notif: Notification ) {
         if( notif.type === "LEVEL" ) {
             this.level= Level[notif.payload.level];
-            console.log( this.level );
         }
     };
 
