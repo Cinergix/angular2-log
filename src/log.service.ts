@@ -21,7 +21,7 @@ export class LogService {
     }
 
     set level( level:string ){
-        this._level;
+        this._level = level;
         this._serviceNotification.next( { type: 'LEVEL', payload: { level }} );
     }
     
