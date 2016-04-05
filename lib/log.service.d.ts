@@ -1,7 +1,8 @@
-/// <reference path="../../angular2/typings/browser.d.ts" />
+/// <reference path="../angular2-log/node_modules/angular2/typings/browser.d.ts" />
 import { Logger } from './logger';
 export declare class LogService {
     loggers: Map<string, Logger>;
+    private _level;
     private _serviceNotification;
     constructor();
     level: string;
