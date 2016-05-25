@@ -1,4 +1,4 @@
-/// <reference path="../../angular2/typings/browser.d.ts" />
+///<reference path="../../../typings/es6-shim/es6-shim.d.ts"/>
 import { Logger } from './logger';
 export declare class LogService {
     loggers: Map<string, Logger>;
