@@ -1,5 +1,3 @@
-///<reference path="../../../typings/es6-shim/es6-shim.d.ts"/>
-
 import {Injectable} from 'angular2/core';
 import {Logger, Notification} from './logger';
 
